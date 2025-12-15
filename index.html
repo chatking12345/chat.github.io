@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ทักทายพิเศษ</title>
+    <style>
+        /* CSS สำหรับการจัดรูปแบบ */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7f6; /* พื้นหลังสีเทาอ่อน */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* ทำให้เต็มหน้าจอ */
+            margin: 0;
+            overflow: hidden; /* ซ่อน scrollbar */
+        }
+
+        .greeting-box {
+            background-color: #ffffff; /* พื้นหลังกล่องสีขาว */
+            border-radius: 15px; /* มุมโค้งมน */
+            padding: 40px 60px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* เงาให้ดูมีมิติ */
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out; /* แอนิเมชั่นค่อยๆ ปรากฏ */
+            border-left: 8px solid #007bff; /* แถบสีน้ำเงินด้านซ้าย */
+        }
+
+        .message {
+            color: #333333; /* สีข้อความเข้ม */
+            font-size: 2.5em; /* ขนาดตัวอักษรใหญ่ */
+            font-weight: bold;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        .name {
+            color: #007bff; /* สีชื่อเป็นสีน้ำเงิน */
+        }
+
+        /* แอนิเมชั่น */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="greeting-box">
+        <p class="message">
+            hello <span class="name">พชรพล พูลสวัสดิ์</span>
+        </p>
+    </div>
+</body>
+</html>
